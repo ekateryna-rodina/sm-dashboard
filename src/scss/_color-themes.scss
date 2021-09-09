@@ -1,0 +1,11 @@
+html {
+  --background: #{$bgLight};
+  --topBackgroundPattern: #{$topBgPatternLight};
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    --primarySuccess: #{$bgDark};
+    --primaryAttention: #{$topBgPatternDark};
+  }
+}
