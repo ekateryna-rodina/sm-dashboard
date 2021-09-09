@@ -1,0 +1,33 @@
+$breakpoints-up: (
+  "small": 20rem,
+  // 320px — 480px: Mobile devices.
+  "medium": 30.0625rem,
+  // 481px — 768px: iPads, Tablets.
+  "large": 48.0625rem,
+  // 769px — 1024px: Small screens, laptops.
+  "x-large": 64.0625rem,
+  // 1025px — 1200px: Desktops, large screens.
+  "xx-large": 75.0625rem // 1201px and more — Extra large screens, TV.,,,
+);
+
+$breakpoints-down: (
+  "small": 30rem,
+  // 320px — 480px: Mobile devices
+  "medium": 48rem,
+  //  481px — 768px: iPads, Tablets.
+  "large": 64rem,
+  // 769px — 1024px: Small screens, laptops.
+  "x-large": 75rem // 1025px — 1200px: Desktops, large screens.,,,,
+);
+
+@mixin breakpoint-up($size) {
+  @media (min-width: map-get($map: $breakpoints-up, $key: $size)) {
+    @content;
+  }
+}
+
+@mixin breakpoint-down($size) {
+  @media (max-width: map-get($map: $breakpoints-down, $key: $size)) {
+    @content;
+  }
+}
