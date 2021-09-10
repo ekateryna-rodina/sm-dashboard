@@ -29,6 +29,23 @@
     justify-content: space-between;
     align-items: center;
     padding: 1.625em 0;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+
+    &--border-fb {
+      border-top: 4px solid $facebookPrimary;
+    }
+    &--border-twitter {
+      border-top: 4px solid $twitterPrimary;
+    }
+    &--border-instagram {
+    }
+    &--border-youtube {
+      border-top: 4px solid $youtubePrimary;
+    }
     &-overview {
       height: 7.8rem;
       background: blue;
