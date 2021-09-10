@@ -22,6 +22,7 @@
 
 .cards {
   &__card {
+    position: relative;
     height: 13.31rem;
     background: var(--cardBg);
     display: flex;
@@ -35,6 +36,21 @@
     -ms-border-radius: 0.5rem;
     -o-border-radius: 0.5rem;
 
+    &-bg {
+      display: block;
+      background: var(--cardBg);
+      position: absolute;
+      z-index: 0;
+      top: 4px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border-radius: 0.3rem 0.3rem 0.5rem 0.5rem;
+      -webkit-border-radius: 0.3rem 0.3rem 0.5rem 0.5rem;
+      -moz-border-radius: 0.3rem 0.3rem 0.5rem 0.5rem;
+      -ms-border-radius: 0.3rem 0.3rem 0.5rem 0.5rem;
+      -o-border-radius: 0.3rem 0.3rem 0.5rem 0.5rem;
+    }
     &--border-fb {
       border-top: 4px solid $facebookPrimary;
     }
@@ -42,6 +58,7 @@
       border-top: 4px solid $twitterPrimary;
     }
     &--border-instagram {
+      background: $instagramPrimary;
     }
     &--border-youtube {
       border-top: 4px solid $youtubePrimary;
@@ -73,9 +90,11 @@
   }
   &__sm-icon {
     margin-right: 0.56em;
+    z-index: 20;
   }
   &__subscribers {
     text-align: center;
+    z-index: 20;
     &-number {
       font-size: 2.69em;
       font-weight: 700;
@@ -93,11 +112,13 @@
     font-size: 0.5rem;
     color: var(--textSecondary);
     font-weight: 700;
+    z-index: 20;
   }
   &__progress {
     font-size: 0.6rem;
     font-weight: 700;
     position: relative;
+    z-index: 20;
     &--up {
       color: $limeGreen;
       &::before {
