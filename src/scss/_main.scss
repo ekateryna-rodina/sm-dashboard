@@ -4,9 +4,15 @@
   margin: 0 auto;
   padding: 2.43em 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15.93rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   grid-gap: 1.25rem;
   justify-content: center;
+
+  @each $key, $value in $breakpoints {
+    @media screen and (#{$key}) {
+      grid-template-columns: repeat(auto-fit, minmax(#{$value}, 1fr));
+    }
+  }
 
   &__card {
     height: 13.31rem;

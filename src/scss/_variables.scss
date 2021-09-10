@@ -23,3 +23,21 @@ $textPrimaryLight: hsl(230, 17%, 14%);
 
 // typography
 $fontSize: 0.875rem;
+
+// grid responsiveness
+
+$breakpoints: (
+  "min-width: 375px": "20rem",
+  "min-width: 481px": "16rem",
+  "min-width: 520px": "13rem",
+  "min-width: 694px": "16rem",
+  "min-width: 769px": "13rem",
+  "min-width: 800px": "13rem",
+  "min-width: 906px": "14rem",
+  "min-width: 1012px": "13rem",
+  "min-width: 1025px": "10rem",
+  "min-width: 1133px": "12rem",
+  "min-width: 1224px": "12rem",
+  "min-width: 1310px": "14rem",
+  "min-width: 1386px": "15.5rem",
+);
