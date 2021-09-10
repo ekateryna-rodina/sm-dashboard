@@ -3,20 +3,32 @@
   max-height: 100vh;
   margin: 0 auto;
   padding: 2.43em 0;
+  @include breakpoint-up(x-large) {
+    width: 77%;
+  }
+}
+.grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  // grid-template-columns: repeat(auto-fit, minmax(30ch auto));
   grid-gap: 1.25rem;
   justify-content: center;
-
   @each $key, $value in $breakpoints {
     @media screen and (#{$key}) {
       grid-template-columns: repeat(auto-fit, minmax(#{$value}, 1fr));
     }
   }
+}
 
+.cards {
   &__card {
     height: 13.31rem;
-    background: lime;
+    background: var(--cardBg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.625em 0;
     &-overview {
       height: 7.8rem;
       background: blue;
@@ -24,7 +36,6 @@
   }
   &__overview-title {
     margin: 1.875rem 0 0.94rem 0;
-    // margin: 5rem;
     padding: 0;
     grid-column: 1/2;
     @include breakpoint-up(medium) {
@@ -37,8 +48,58 @@
       grid-column: 1/5;
     }
   }
-
-  @include breakpoint-up(x-large) {
-    width: 77%;
+  &__user-account {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__sm-icon {
+    margin-right: 0.56em;
+  }
+  &__subscribers {
+    text-align: center;
+    &-number {
+      font-size: 2.69em;
+      font-weight: 700;
+      color: var(--textPrimary);
+    }
+    &-label {
+      font-size: 0.69em;
+      color: var(--textSecondary);
+      text-transform: uppercase;
+      letter-spacing: 0.4em;
+      margin-top: 0.93em;
+    }
+  }
+  &__username {
+    font-size: 0.5rem;
+    color: var(--textSecondary);
+    font-weight: 700;
+  }
+  &__progress {
+    font-size: 0.6rem;
+    font-weight: 700;
+    position: relative;
+    &--up {
+      color: $limeGreen;
+      &::before {
+        content: "\f0d8";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        position: absolute;
+        left: -1.1em;
+      }
+    }
+    &--down {
+      color: $brightRed;
+      &::before {
+        content: "\f0d7";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        position: absolute;
+        left: -1.1em;
+      }
+    }
   }
 }

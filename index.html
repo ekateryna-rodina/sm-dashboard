@@ -8,6 +8,7 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
     <link rel="stylesheet" href="./src/css/style.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <title>Document</title>
   </head>
   <body>
@@ -20,20 +21,76 @@
         <div class="header__switch header__switch--light"></div>
       </div>
     </header>
-    <main class="main">
-      <div class="main__card"></div>
-      <div class="main__card"></div>
-      <div class="main__card"></div>
-      <div class="main__card"></div>
-      <h2 class="main__overview-title">Overview - Today</h2>
-      <div class="main__card-overview"></div>
-      <div class="main__card-overview"></div>
-      <div class="main__card-overview"></div>
-      <div class="main__card-overview"></div>
-      <div class="main__card-overview"></div>
-      <div class="main__card-overview"></div>
-      <div class="main__card-overview"></div>
-      <div class="main__card-overview"></div>
+    <main class="main grid-container cards">
+      <div class="cards__card">
+        <div class="cards__user-account">
+          <img
+            class="cards__sm-icon"
+            src="./src/images/icon-facebook.svg"
+          ></img> 
+          
+          <span class="cards__username">@katerynar</span>
+        </div>
+        <div class="cards__subscribers">
+          <div class="cards__subscribers-number">8239</div>
+          <div class="cards__subscribers-label">followers</div>
+        </div>
+        <div class="cards__progress cards__progress--up">12 Today</div>
+      </div>
+      <div class="cards__card">
+        <div class="cards__user-account">
+          <img
+            class="cards__sm-icon"
+            src="./src/images/icon-facebook.svg"
+          ></img> 
+          
+          <span class="cards__username">@katerynar</span>
+        </div>
+        <div class="cards__subscribers">
+          <div class="cards__subscribers-number">8239</div>
+          <div class="cards__subscribers-label">followers</div>
+        </div>
+        <div class="cards__progress cards__progress--down">12 Today</div>
+      </div>
+      <div class="cards__card">
+        <div class="cards__user-account">
+          <img
+            class="cards__sm-icon"
+            src="./src/images/icon-facebook.svg"
+          ></img> 
+          
+          <span class="cards__username">@katerynar</span>
+        </div>
+        <div class="cards__subscribers">
+          <div class="cards__subscribers-number">8239</div>
+          <div class="cards__subscribers-label">subscribers</div>
+        </div>
+        <div class="cards_progress"></div>
+      </div>
+      <div class="cards__card">
+        <div class="cards__user-account">
+          <img
+            class="cards__sm-icon"
+            src="./src/images/icon-facebook.svg"
+          ></img> 
+          
+          <span class="cards__username">@katerynar</span>
+        </div>
+        <div class="cards__subscribers">
+          <div class="cards__number">8239</div>
+          <div class="cards__label">subscribers</div>
+        </div>
+        <div class="cards_progress">12 Today</div>
+      </div>
+      <h2 class="cards__overview-title">Overview - Today</h2>
+      <div class="cards__card-overview"></div>
+      <div class="cards__card-overview"></div>
+      <div class="cards__card-overview"></div>
+      <div class="cards__card-overview"></div>
+      <div class="cards__card-overview"></div>
+      <div class="cards__card-overview"></div>
+      <div class="cards__card-overview"></div>
+      <div class="cards__card-overview"></div>
     </main>
   </body>
 </html>

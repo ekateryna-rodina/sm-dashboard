@@ -1,11 +1,18 @@
 html {
   --background: #{$bgLight};
   --topBackgroundPattern: #{$topBgPatternLight};
+  --cardBg: #{$cardBgLight};
+  --textPrimary: #{$textPrimaryLight};
+  --textSecondary: #{$textSecondaryLight};
 }
 
 @media (prefers-color-scheme: dark) {
   html {
+    --background: #{$bgDark};
     --primarySuccess: #{$bgDark};
     --primaryAttention: #{$topBgPatternDark};
+    --cardBg: #{$cardBgDark};
+    --textPrimary: #{$textPrimaryDark};
+    --textSecondary: #{$textSecondaryDark};
   }
 }
