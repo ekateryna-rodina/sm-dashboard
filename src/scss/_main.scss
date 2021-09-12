@@ -2,7 +2,7 @@
   width: 87%;
   max-height: 100vh;
   margin: 0 auto;
-  padding: 2.43em 0;
+  padding: 0;
   @include breakpoint-up(x-large) {
     width: 77%;
   }
@@ -86,6 +86,7 @@
     margin: 1.875rem 0 0.94rem 0;
     padding: 0;
     grid-column: 1/2;
+    color: var(--textPrimary);
     @include breakpoint-up(medium) {
       grid-column: 1/3;
     }

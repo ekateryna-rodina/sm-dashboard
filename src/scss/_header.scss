@@ -1,0 +1,15 @@
+.header {
+  &__title {
+    padding: 0;
+    margin: 0 0 0.9rem 0;
+    color: var(--textPrimary);
+    @include breakpoint-down(small) {
+      font-size: 1.06rem;
+    }
+  }
+  &__subtitle {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--textSecondary);
+  }
+}

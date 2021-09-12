@@ -12,6 +12,9 @@ body {
   font-family: "Inter", sans-serif;
   background: var(--background);
   line-height: 1;
+  @include breakpoint-up(x-large) {
+    overflow: hidden;
+  }
 }
 
 * {
@@ -24,4 +27,13 @@ body {
 }
 .ml-auto {
   margin-left: auto;
+}
+
+.container {
+  width: 86.6%;
+  margin: auto;
+  padding: 2.625rem 0;
+  @include breakpoint-up(x-large) {
+    width: 77%;
+  }
 }
