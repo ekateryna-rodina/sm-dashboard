@@ -14,13 +14,10 @@ const MainCard = (props: MainCardProps) => {
   const { username, platform, followers, progress } = props;
   const cardClassName = `cards__card cards__card--main cards__card--border-${Platforms[platform].className}`;
   const progressClass = `cards__progress cards__progress--${progress.direction}`;
-  const imageSrc = Platforms[platform].imageUrl;
 
-  console.log(imageSrc);
   return (
     <Card className={cardClassName}>
       <div className="cards__user-account">
-        {/* <YourSvg /> */}
         <SocialMediaIcon platform={platform} />
 
         <span className="cards__username">{username}</span>

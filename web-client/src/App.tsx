@@ -1,14 +1,20 @@
 import "./App.scss";
 import Header from "./components/Header/Header";
 import MainCard from "./components/MainCard/MainCard";
-import { mainCards } from "./data/userData";
+import OverviewCard from "./components/OverviewCard/OverviewCard";
+import { mainCards, overviewCards } from "./data/userData";
+
 function App() {
   return (
     <div>
       <Header />
       <main className="main grid-container cards">
-        {mainCards.map((card) => (
-          <MainCard key={card.platform.toString()} {...card} />
+        {mainCards.map((card, index) => (
+          <MainCard key={index.toString()} {...card} />
+        ))}
+        <h2 className="cards__overview-title">Overview - Today</h2>
+        {overviewCards.map((card, index) => (
+          <OverviewCard key={index.toString()} {...card} />
         ))}
       </main>
     </div>

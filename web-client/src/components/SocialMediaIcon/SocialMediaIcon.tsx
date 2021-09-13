@@ -7,6 +7,7 @@ import { ReactComponent as YoutubeIcon } from "../../images/icon-youtube.svg";
 
 interface SocialMediaIconProps {
   platform: Platform;
+  className?: string;
 }
 const Icons = {
   [Platform.Instagram]: <InstaIcon />,
@@ -15,8 +16,8 @@ const Icons = {
   [Platform.YouTube]: <YoutubeIcon />,
 };
 const SocialMediaIcon = (props: SocialMediaIconProps) => {
-  const { platform } = props;
-  return <div className="cards__sm-icon">{Icons[platform]}</div>;
+  const { platform, className } = props;
+  return <div className={`cards__sm-icon ${className}`}>{Icons[platform]}</div>;
 };
 
 export default SocialMediaIcon;

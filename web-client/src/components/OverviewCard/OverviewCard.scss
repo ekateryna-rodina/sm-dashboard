@@ -3,17 +3,17 @@
     &--overview {
       height: 7.8rem;
       background: var(--cardBg);
-      //   padding: 1.68rem;
+      padding: 1.68rem;
       display: grid;
       grid-template-columns: repeat(2, 50%);
     }
   }
-  &__page-views-label {
+  &__scale-label {
     color: var(--textSecondary);
     font-size: 0.8rem;
     font-weight: 700;
   }
-  &__page-views-number {
+  &__scale-number {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--textPrimary);
