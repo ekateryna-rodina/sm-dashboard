@@ -29,12 +29,14 @@
       border-top: 4px solid $twitterPrimary;
     }
     &--border-instagram {
-      background: $instagramPrimary;
+      //background: $instagramPrimary;
       border-radius: 0.5rem 0.5rem 0.6rem 0.6rem;
       -webkit-border-radius: 0.5rem 0.5rem 0.6rem 0.6rem;
       -moz-border-radius: 0.5rem 0.5rem 0.6rem 0.6rem;
       -ms-border-radius: 0.5rem 0.5rem 0.6rem 0.6rem;
       -o-border-radius: 0.5rem 0.5rem 0.6rem 0.6rem;
+      animation: toGradient 1ms forwards;
+      -webkit-animation: toGradient 1ms forwards;
     }
     &--border-youtube {
       border-top: 4px solid $youtubePrimary;

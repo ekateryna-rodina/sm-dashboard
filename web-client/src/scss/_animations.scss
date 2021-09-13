@@ -1,0 +1,8 @@
+@keyframes toGradient {
+  from {
+    background: var(--background);
+  }
+  to {
+    background: $instagramPrimary;
+  }
+}
