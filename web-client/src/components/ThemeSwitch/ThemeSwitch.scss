@@ -1,0 +1,58 @@
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 3rem;
+  height: 1.38rem;
+  input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+
+    &:checked + .slider {
+      background-color: var(--toggleBg);
+    }
+    // &:focus + .slider {
+    //   background-color: var(--toggleBg);
+    // }
+    &:checked + .slider:before {
+      transform: translateX(1.5rem);
+      -webkit-transform: translateX(1.5rem);
+      -moz-transform: translateX(1.5rem);
+      -ms-transform: translateX(1.5rem);
+      -o-transform: translateX(1.5rem);
+    }
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    // background-color: red;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    &:before {
+      position: absolute;
+      content: "";
+      height: 1rem;
+      width: 1rem;
+      left: 0.19rem;
+      bottom: 0.19rem;
+      background-color: white;
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
+    }
+    &.round {
+      border-radius: 0.69rem;
+      -webkit-border-radius: 0.69rem;
+      -moz-border-radius: 0.69rem;
+      -ms-border-radius: 0.69rem;
+      -o-border-radius: 0.69rem;
+      &:before {
+        border-radius: 50%;
+      }
+    }
+  }
+}

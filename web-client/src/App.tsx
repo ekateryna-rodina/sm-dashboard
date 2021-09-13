@@ -2,7 +2,6 @@ import "./App.scss";
 import Header from "./components/Header/Header";
 import MainCard from "./components/MainCard/MainCard";
 import OverviewCard from "./components/OverviewCard/OverviewCard";
-import ThemeSwitch from "./components/ThemeSwitch/ThemeSwitch";
 import { mainCards, overviewCards } from "./data/userData";
 
 function App() {
@@ -10,7 +9,6 @@ function App() {
     <div>
       <Header />
       <main className="main grid-container cards">
-        <ThemeSwitch />
         {mainCards.map((card, index) => (
           <MainCard key={index.toString()} {...card} />
         ))}

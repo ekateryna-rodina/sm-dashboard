@@ -4,6 +4,7 @@ body.light-mode {
   --cardBg: #{$cardBgLight};
   --textPrimary: #{$textPrimaryLight};
   --textSecondary: #{$textSecondaryLight};
+  --toggleBg: #{$toggleLight};
 }
 
 body.dark-mode {
@@ -13,4 +14,5 @@ body.dark-mode {
   --cardBg: #{$cardBgDark};
   --textPrimary: #{$textPrimaryDark};
   --textSecondary: #{$textSecondaryDark};
+  --toggleBg: #{$toggleDark};
 }
