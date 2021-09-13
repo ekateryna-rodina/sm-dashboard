@@ -1,4 +1,4 @@
-html {
+body.light-mode {
   --background: #{$bgLight};
   --topBackgroundPattern: #{$topBgPatternLight};
   --cardBg: #{$cardBgLight};
@@ -6,13 +6,11 @@ html {
   --textSecondary: #{$textSecondaryLight};
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    --background: #{$bgDark};
-    --primarySuccess: #{$bgDark};
-    --primaryAttention: #{$topBgPatternDark};
-    --cardBg: #{$cardBgDark};
-    --textPrimary: #{$textPrimaryDark};
-    --textSecondary: #{$textSecondaryDark};
-  }
+body.dark-mode {
+  --background: #{$bgDark};
+  --primarySuccess: #{$bgDark};
+  --primaryAttention: #{$topBgPatternDark};
+  --cardBg: #{$cardBgDark};
+  --textPrimary: #{$textPrimaryDark};
+  --textSecondary: #{$textSecondaryDark};
 }

@@ -14,7 +14,6 @@ const OverviewCard = (props: OverviewCardProps) => {
   return (
     <Card className="cards__card cards__card--overview">
       <span className="cards__scale-label">{progress.scale?.toString()}</span>
-      {/* <img className="cards__sm-icon ml-auto" src={imageSrc} alt=""></img> */}
       <SocialMediaIcon platform={platform} className="ml-auto" />
       <span className="cards__scale-number">{total}</span>
       <span
