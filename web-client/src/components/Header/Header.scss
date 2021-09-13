@@ -1,13 +1,21 @@
 .header {
   .container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    @include breakpoint-up(medium) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  &__text {
+    flex: 3;
   }
   &__title {
     padding: 0;
-    margin: 0 0 0.9rem 0;
+    margin: 0 0 0.7rem 0;
     color: var(--textPrimary);
     @include breakpoint-down(small) {
       font-size: 1.06rem;

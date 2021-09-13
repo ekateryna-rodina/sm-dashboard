@@ -22,19 +22,19 @@ const ThemeSwitch = () => {
     setDarkMode(!darkMode);
   };
   return (
-    <>
-      <label className="cards__switch" htmlFor="themeSwither">
-        <span className="cards__switch-label">
-          {darkMode ? "light mode" : "dark mode"}
-        </span>
+    <div className="header__switch-container">
+      <span className="header__switch-label">
+        {darkMode ? "light mode" : "dark mode"}
+      </span>
+      <label className="header__switch" htmlFor="themeSwither">
         <input
           id="themeSwither"
           type="checkbox"
           onChange={onModeChangeHandler}
         />
-        <span className="cards__switch-slider"></span>
+        <span className="header__switch-slider"></span>
       </label>
-    </>
+    </div>
   );
 };
 
