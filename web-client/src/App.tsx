@@ -6,16 +6,6 @@ import ThemeSwitch from "./components/ThemeSwitch/ThemeSwitch";
 import { mainCards, overviewCards } from "./data/userData";
 
 function App() {
-  // const getMode = () => {
-  //   console.log(localStorage.getItem("mode"));
-  //   const initialMode = localStorage.getItem("mode");
-  //   if (initialMode) return JSON.parse(localStorage.getItem("mode") || "");
-  //   return window.matchMedia("(prefers-color-scheme:dark)").matches;
-  // };
-  // const [darkMode, setMode] = useState(getMode());
-  // useEffect(() => {
-  //   // localStorage.setItem("mode", JSON.stringify(darkMode));
-  // }, [darkMode]);
   return (
     <div>
       <Header />
