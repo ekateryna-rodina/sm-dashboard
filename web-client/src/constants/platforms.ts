@@ -1,4 +1,4 @@
-import { PlatformsImageUrls } from "../../data/common";
+import { PlatformsImageUrls } from "../data/common";
 import { EnumDictionary } from "../helpers/enumDictionary";
 
 export type PlatformProps = {

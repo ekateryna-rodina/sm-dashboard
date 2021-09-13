@@ -1,17 +1,71 @@
 .cards {
   &__card {
-    position: relative;
-    height: 13.31rem;
-    background: var(--cardBg);
+    &--main {
+      height: 13.31rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &-bg {
+      display: block;
+      background: var(--cardBg);
+      position: absolute;
+      z-index: 0;
+      top: 4px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border-radius: 0.3rem 0.3rem 0.5rem 0.5rem;
+      -webkit-border-radius: 0.3rem 0.3rem 0.5rem 0.5rem;
+      -moz-border-radius: 0.3rem 0.3rem 0.5rem 0.5rem;
+      -ms-border-radius: 0.3rem 0.3rem 0.5rem 0.5rem;
+      -o-border-radius: 0.3rem 0.3rem 0.5rem 0.5rem;
+    }
+    &--border-fb {
+      border-top: 4px solid $facebookPrimary;
+    }
+    &--border-twitter {
+      border-top: 4px solid $twitterPrimary;
+    }
+    &--border-instagram {
+      background: $instagramPrimary;
+      border-radius: 0.5rem 0.5rem 0.6rem 0.6rem;
+      -webkit-border-radius: 0.5rem 0.5rem 0.6rem 0.6rem;
+      -moz-border-radius: 0.5rem 0.5rem 0.6rem 0.6rem;
+      -ms-border-radius: 0.5rem 0.5rem 0.6rem 0.6rem;
+      -o-border-radius: 0.5rem 0.5rem 0.6rem 0.6rem;
+    }
+    &--border-youtube {
+      border-top: 4px solid $youtubePrimary;
+    }
+  }
+  &__user-account {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    padding: 1.625em 0;
-    border-radius: 0.5rem;
-    -webkit-border-radius: 0.5rem;
-    -moz-border-radius: 0.5rem;
-    -ms-border-radius: 0.5rem;
-    -o-border-radius: 0.5rem;
+  }
+  &__subscribers {
+    text-align: center;
+    z-index: 20;
+    &-number {
+      font-size: 2.69em;
+      font-weight: 700;
+      color: var(--textPrimary);
+    }
+    &-label {
+      font-size: 0.69em;
+      color: var(--textSecondary);
+      text-transform: uppercase;
+      letter-spacing: 0.4em;
+      margin-top: 0.93em;
+    }
+  }
+  &__username {
+    font-size: 0.5rem;
+    color: var(--textSecondary);
+    font-weight: 700;
+    z-index: 20;
   }
 }

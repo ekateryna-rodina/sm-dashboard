@@ -1,2 +1,42 @@
 .cards {
+  &__card {
+    position: relative;
+    background: var(--cardBg);
+    padding: 1.625em 0;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+  }
+  &__sm-icon {
+    margin-right: 0.56em;
+    z-index: 20;
+  }
+  &__progress {
+    font-size: 0.6rem;
+    font-weight: 700;
+    position: relative;
+    z-index: 20;
+    &--up {
+      color: $limeGreen;
+      &::before {
+        content: "\f0d8";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        position: absolute;
+        left: -1.1em;
+      }
+    }
+    &--down {
+      color: $brightRed;
+      &::before {
+        content: "\f0d7";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        position: absolute;
+        left: -1.1em;
+      }
+    }
+  }
 }
