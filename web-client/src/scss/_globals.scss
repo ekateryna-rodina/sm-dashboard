@@ -5,7 +5,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-size: 100%;
+  // font-size: 100%;
 }
 
 body {
@@ -13,7 +13,7 @@ body {
   background: var(--background);
   line-height: 1;
   @include breakpoint-up(x-large) {
-    overflow: hidden;
+    overflow: auto;
   }
 }
 

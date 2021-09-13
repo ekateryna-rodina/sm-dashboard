@@ -12,11 +12,17 @@
     color: var(--textSecondary);
     font-size: 0.8rem;
     font-weight: 700;
+    @media screen and(min-width: 1024px) and (max-width: 1110px) {
+      font-size: 70%;
+    }
   }
   &__scale-number {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--textPrimary);
     margin-top: auto;
+    @media screen and(min-width: 1024px) and (max-width: 1110px) {
+      font-size: 95%;
+    }
   }
 }
