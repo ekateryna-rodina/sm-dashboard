@@ -23,12 +23,16 @@ const ThemeSwitch = () => {
   };
   return (
     <>
-      <label className="switch">
-        <input type="checkbox" onChange={onModeChangeHandler} />
-        <span className="slider round"></span>
-      </label>
-      <label htmlFor="themeSwither">
-        <span>{darkMode ? "light" : "dark"}</span>
+      <label className="cards__switch" htmlFor="themeSwither">
+        <span className="cards__switch-label">
+          {darkMode ? "light mode" : "dark mode"}
+        </span>
+        <input
+          id="themeSwither"
+          type="checkbox"
+          onChange={onModeChangeHandler}
+        />
+        <span className="cards__switch-slider"></span>
       </label>
     </>
   );
